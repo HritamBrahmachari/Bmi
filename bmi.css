@@ -11,7 +11,7 @@ body {
   form {
     margin-top: 20px; /* Add some space between the heading and the form */
     display: inline-block; /* Display the form as an inline-block element */
-    text-align: left; /* Left align the form elements */
+    text-align: center; /* Left align the form elements */
   }
   
   label {
