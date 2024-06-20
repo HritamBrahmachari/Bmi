@@ -39,6 +39,10 @@ body {
   #btn{
     background-color: #45a049; /* Change the background color of the button on hover */
   }
+    
+   p{
+    line-height: 2.2;
+  }
   
   p#result {
     margin-top: 20px; /* Add some space between the button and the result paragraph */
