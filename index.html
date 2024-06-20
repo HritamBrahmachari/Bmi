@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bmi.css">
+</head>
+
+<body>
+
+    <h1>BMI Calculator</h1>
+    <form>
+        <label for="height">Height (cm):</label>
+        <input type="number" value="0" id="height" name="height" required><br><br>
+        <label for="weight">Weight (kg):</label>
+        <input type="number" value="0" id="weight" name="weight" required><br><br>
+        <input type="button" value ="Calculate" id="btn">
+        <br><br>
+        <p id="result"></p>
+
+        <script>
+            let height = +document.getElementById("height").value;
+            let weight = +document.getElementById("weight").value;
+            const result = document.getElementById("result");
+
+            const bmi = () => {
+                const res = weight / (height * height) * 10000;
+                result.innerHTML = "Your BMI is " + res.toFixed(2);
+                return res;
+            };
+
+            document.getElementById("btn").addEventListener("click", () => {
+                height = +document.getElementById("height").value;
+                weight = +document.getElementById("weight").value;
+                bmi();
+            });
+        </script>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif; /* Set the font-family for the entire page */
+    text-align: center; /* Center align the content */
+    background-image :linear-gradient(to right, rgb(218, 181, 218), rgb(215, 232, 197));
+  }
+  
+  h1 {
+    color: #333; /* Set the color of the heading */
+  }
+  
+  form {
+    margin-top: 20px; /* Add some space between the heading and the form */
+    display: inline-block; /* Display the form as an inline-block element */
+    text-align: left; /* Left align the form elements */
+  }
+  
+  label {
+    display: block; /* Display each label on a new line */
+    margin-bottom: 5px; /* Add some space between each label */
+    color: #666; /* Set the color of the labels */
+  }
+  
+  input[type="number"] {
+    padding: 5px; /* Add some padding to the number input fields */
+    width: 100px; /* Set the width of the number input fields */
+    border: 1px solid #ccc; /* Add a border to the number input fields */
+    border-radius: 3px; /* Add some border-radius to round the corners */
+  }
+  
+  input[type="button"] {
+    padding: 10px 20px; /* Add padding to the button */
+    background-color: #4CAF50; /* Set the background color of the button */
+    color: white; /* Set the text color of the button */
+    border: none; /* Remove the border of the button */
+    border-radius: 3px; /* Add some border-radius to round the corners */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+  }
+  
+  #btn{
+    background-color: #45a049; /* Change the background color of the button on hover */
+  }
+  
+  p#result {
+    margin-top: 20px; /* Add some space between the button and the result paragraph */
+    font-weight: bold; /* Make the result text bold */
+  }
+  
