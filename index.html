@@ -13,6 +13,13 @@
 <body>
 
     <h1>BMI Calculator</h1>
+    
+    <p>Body mass index (BMI) is a measure of whether a person's weight is healthy for their height. 
+        <br>BMI ranges for adults are as follows:<br>
+        Under 18.5: Underweight<br>
+        18.5–24.9: Healthy weight<br>
+        25–29.9: Overweight<br>
+        30 and above: Obese</p>
     <form>
         <label for="height">Height (cm):</label>
         <input type="number"  id="height" name="height" required><br><br>
@@ -30,6 +37,15 @@
             const bmi = () => {
                 const res = weight / (height * height) * 10000;
                 result.innerHTML = "Your BMI is " + res.toFixed(2);
+                 if (res < 18.5) {
+                    result.innerHTML += " and you are Underweight";
+                } else if (res >= 18.5 && res <= 24.9) {
+                    result.innerHTML += " and you are Normal";
+                } else if (res >= 25 && res <= 29.9) {
+                    result.innerHTML += " and you are Overweight";
+                } else {
+                    result.innerHTML += " and you are Obese";
+                }
                 return res;
             };
 
